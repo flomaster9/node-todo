@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://use.fontawesome.com/92f533fa03.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div id="todo" class="todo">
+      <form id="todo-form" action="\" method="POST">
+        <div class="input-container">
+          <input type="text" name="item" value="" id="new-todo">
+          <input type="submit" value="Add Item">
+        </div>
+        <ul class="todo-list">
+          <% data.forEach(function(item){ %>
+            <li class="todo-item"> <span><%= item.item %></span> <i class="fa fa-times" aria-hidden="true"></i> </li>
+          <% }) %>
+        </ul>
+      </form>
+    </div>
+  </div>
+</body>
+  <script src="assets/script.js"></script>
+</html>
