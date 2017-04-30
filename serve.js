@@ -2,7 +2,7 @@ var express = require('express');
 var todoController = require('./controllers/todoController.js');
 
 var app = express();
-var port = 3006;
+var port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 
